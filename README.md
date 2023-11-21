@@ -37,6 +37,7 @@ export MODEL_FILE_PATH="path a model file with .gguf extension"
 uvicorn web_server:app  --host 0.0.0.0 --port 8000
 ```
 Check out the docs: http://0.0.0.0:8000/docs
+
 9. Try an example request:
 ```bash
 $ curl -X 'POST' \
