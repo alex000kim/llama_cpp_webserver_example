@@ -1,0 +1,4 @@
+fastapi
+llama-cpp-python
+pydantic
+uvicorn
