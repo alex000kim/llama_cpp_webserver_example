@@ -28,7 +28,10 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
-7. Set `MODEL_PATH` to the path of the cloned model repo
+7. Set MODEL_FILE_PATH to the filepath of the cloned model:
+```bash
+export MODEL_FILE_PATH="path a model file with .gguf extension"
+```
 8. Start the server:
 ```bash 
 uvicorn web_server:app  --host 0.0.0.0 --port 8000

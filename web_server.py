@@ -5,9 +5,9 @@ from fastapi import FastAPI, HTTPException
 from llama_cpp import Llama
 from pydantic import BaseModel, Field
 
-model_path = Path(os.getenv('MODEL_PATH'))/'mistral-7b-instruct-v0.1.Q6_K.gguf'
+model_file_path = os.getenv('MODEL_FILE_PATH')
 
-llama2_model = Llama(model_path=str(model_path), seed=42)
+llama2_model = Llama(model_path=model_file_path, seed=42)
 
 app = FastAPI()
 
